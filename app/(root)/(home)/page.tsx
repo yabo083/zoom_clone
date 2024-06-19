@@ -20,7 +20,7 @@ const Home = () => {
               {date}
             </p>
             <p className="text-lg font-medium text-sky-1 lg:text-2xl">
-              Time Zone: {timeZone}
+              {/* Time Zone: {timeZone} */}
             </p>
           </div>
         </div>
