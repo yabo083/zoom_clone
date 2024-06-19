@@ -19,9 +19,6 @@ const Home = () => {
             <p className="text-lg font-medium text-sky-1 lg:text-2xl">
               {date}
             </p>
-            <p className="text-lg font-medium text-sky-1 lg:text-2xl">
-              Time Zone: {timeZone}
-            </p>
           </div>
         </div>
       </div>
