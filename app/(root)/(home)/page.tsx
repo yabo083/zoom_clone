@@ -5,6 +5,7 @@ const Home = () => {
 
   const time = now.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit", hour12: true});
   const date = new Intl.DateTimeFormat(undefined, { dateStyle: 'full' }).format(now);
+  const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   return (
     <section className="flex size-full flex-col gap-10 text-white">
@@ -17,6 +18,9 @@ const Home = () => {
             <h1 className="text-4xl font-extrabold lg:text-7xl">{time}</h1>
             <p className="text-lg font-medium text-sky-1 lg:text-2xl">
               {date}
+            </p>
+            <p className="text-lg font-medium text-sky-1 lg:text-2xl">
+              Time Zone: {timeZone}
             </p>
           </div>
         </div>
